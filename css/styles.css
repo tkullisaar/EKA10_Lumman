@@ -105,15 +105,24 @@ body {
     background: url(../img/laine-2.svg) no-repeat top;
     background-size: contain;
     padding-top: 0%;
+}
 
-
+.top-wave-2 {
+    background: url(../img/laine-2.svg) no-repeat top;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
 }
 
 .bg-kodu-ja-elustiil {
     background: url(../img/bg-kodu-ja-elustiil.png) no-repeat;
-    height: 400px;
-    position: relative;
-    overflow: hidden;
+    background-size: cover;
+
+    padding-bottom: 8rem;
+    padding-top: 8rem;
 }
 
 .bg-kodu-ja-elustiil:hover .overlay {
@@ -122,9 +131,10 @@ body {
 
 .bg-lapsed-ja-mang {
     background: url(../img/bg-lapsed-ja-mang.png) no-repeat;
-    height: 400px;
-    position: relative;
-    overflow: hidden;
+    background-size: cover;
+
+    padding-bottom: 8rem;
+    padding-top: 8rem;
 }
 
 .bg-lapsed-ja-mang:hover .overlay {
@@ -157,9 +167,20 @@ body {
     background-size: contain;
 }
 
+.bottom-wave-3 {
+    background: url(../img/laine-3.svg) no-repeat bottom;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+
 .bg-alamlehe-header {
     background: url(../img/jazmin-quaynor-8ioenvmof-I-unsplash\ 1.jpg) no-repeat;
-    min-height: 200px;
+    height: 200px;
 
 }
 
