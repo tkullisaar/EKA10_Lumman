@@ -21,48 +21,73 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 
 
-<style>
+    <style>
+       
 
-</style>
+    </style>
     <title>lumman.ee redesign</title>
 </head>
 
 <body>
 
 
-    <nav class="navbar fixed-top navbar-expand-sm navbar-dark" id="menufix">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark " id="menufix">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"> <img src="img/lumman-logo.svg"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+
+
+            <button class="navbar-toggler menu-icon md" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+                <img style="width: 30px" src="img/mdi-light_menu.svg" alt="menu icon">
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">AVALEHT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pood.html">POOD</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="meist.html">MEIST</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blogi.html">BLOGI</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="kontakt.html">KONTAKT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"> <img src="img/mdi-light_cart.svg"></a>
-                    </li>
 
-                </ul>
+            <a class="navbar-brand " href="index.html"> <img src="img/lumman-logo.svg"></a>
 
+            <div class="offcanvas offcanvas-start-lg mobile-nav" tabindex="-1" id="offcanvasWithBackdrop"
+                aria-labelledby="offcanvasWithBackdropLabel">
+                <div class="offcanvas-header d-flex d-lg-none ms-auto">
+                    <a href="javascript:void(0) " class="text-reset p-0" data-bs-dismiss="offcanvas" aria-label="close">
+                        <img style="width: 30px ms-auto" src="img/close-icon.svg" alt="menu icon">
+                    </a>
+                </div>
+
+
+                <div class="offcanvas-body p-lg-0">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">AVALEHT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pood.html">POOD</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="meist.html">MEIST</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blogi.html">BLOGI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontakt.html">KONTAKT</a>
+                        </li>
+                        <div class="d-flex ms-3">
+                            <li class="mobile-nav-item">
+                                <a class="social-icon" href="index.html"> <img src="img/instagram.svg"></a>
+                        </li>
+                        <li class="mobile-nav-item">
+                            <a class="social-icon" href="index.html"> <img src="img/facebook.svg"></a>
+                        </li>
+                    </div>
+                        
+                    </ul>
+
+                </div>
             </div>
+            <a class="cart " href="index.html"> <img src="img/mdi-light_cart.svg"></a>
         </div>
     </nav>
+
+
+
+
 
     <div class="hero-bg-lumman-final">
         <div class="hero-bg-lumman-wave">
@@ -89,6 +114,8 @@
                         Kõik Lummani omatooted on valminud väärtustava taaskasutuse põhimõttel, peites endas palju
                         headust nii inimeste kui keskkonna vastu.</p>
                 </div>
+
+                
                 <div class="row text-center justify-content-center mb-5">
                     <div class="col-md-3 col-sm-12">
                         <img src="img/icon-earth.svg" alt="">
@@ -113,20 +140,18 @@
 
             <div class="bg-kodu-ja-elustiil col-lg-6 col-sm-12 col-md-6 text-white text-center">
                 <div class="overlay"></div>
-                <h1 class="text-center">kodu ja elustiil</h1>
-                <a class="btn btn-light" href="pood.html"
-                    role="button">VAATA
+                <h1 class="text-center" id="category">kodu ja elustiil</h1>
+                <a class="btn btn-light" href="pood.html" role="button">VAATA
                     TOOTEID</a>
             </div>
 
 
             <div class="bg-lapsed-ja-mang col-lg-6 col-sm-12 col-md-6 text-white text-center">
                 <div class="overlay"></div>
-        
-                <h1 class="">lapsed ja mäng</h1>
-                <p><a class="btn btn-light" href="pood.html"
-                    role="button">VAATA
-                    TOOTEID</a></p>
+
+                <h1 class="text-center" id="category">lapsed ja mäng</h1>
+                <p><a class="btn btn-light" href="pood.html" role="button">VAATA
+                        TOOTEID</a></p>
             </div>
             <div class="top-wave-2"></div>
         </div>
@@ -314,6 +339,8 @@
     <!-- NAVBAR -->
     <script src="JS/navbar.js"></script>
 
+    <!-- OFF CANVAS NAVBAR -->
+    <script src="/path/to/cdn/bootstrap.bundle.min.js"></script>
 
 
 </body>

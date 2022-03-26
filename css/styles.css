@@ -33,7 +33,8 @@ body {
 
 .facts {
     font-size: 80px;
-    color: rgba(100, 100, 100, 1);
+    color: rgba(142, 119, 103, 1);
+    font-weight: bold;
 }
 .text-1000 {
     color: rgba(66, 66, 66, 1);
@@ -111,7 +112,7 @@ body {
     background: url(../img/laine-2.svg) no-repeat top;
     background-size: 100%;
     width: 100%;
-    height: 100%;
+    height: 50%;
     top: 0;
     left: 0;
     position: absolute;
@@ -142,7 +143,7 @@ body {
 }
 
 .overlay {
-    background: rgba(96, 58, 38, 0.4);
+    background: rgba(96, 58, 38, 0.3);
     position: absolute;
     height: 100%;
     width: 100%;
@@ -181,8 +182,11 @@ body {
 .bg-alamlehe-header {
     background: url(../img/jazmin-quaynor-8ioenvmof-I-unsplash\ 1.jpg) no-repeat;
     height: 200px;
+    background-size: cover;
+    
+    }
 
-}
+
 
 .wave-header {
     background: url(../img/laine-header.svg) no-repeat bottom;
@@ -196,7 +200,7 @@ body {
 }
 
 .navbar.stick {
-    background-color: rgba(96, 58, 38, 0.60);
+    background-color: rgba(142, 119, 103, 1);
     backdrop-filter: blur(16px);
 }
 
@@ -421,3 +425,91 @@ a:link {
   .badge:empty {
     display: none;
   }
+
+  .cart {
+      padding: 10px;
+  }
+
+
+  @media (min-width : 992px) {
+    .offcanvas {
+        visibility: visible;
+        position: relative;
+        background: none;
+        border: none;
+        justify-content: end;
+        color: red;
+    }
+}
+
+@media (max-width : 992px) {
+    .offcanvas {
+        width: 250px !important;
+    }
+
+    .offcanvas-start-lg {
+        top: 0;
+        left: 0;
+        border-right: 1px solid rgba(0, 0, 0, .2);
+        transform: translateX(-100%);
+    }
+}
+
+.navbar-nav li a {
+    color: white;
+}
+
+.menu-icon {
+    border: none;
+}
+
+.mobile-nav {
+    background-color: rgba(142, 119, 103, 1);
+}
+
+.offcanvas {
+    position: fixed;
+    bottom: 0;
+    z-index: 1045;
+    flex-direction: column;
+    max-width: 100%;
+
+    background-clip: padding-box;
+    outline: 0;
+    transition: transform .3s ease-in-out;
+}
+
+@media (max-width: 990px) {
+    .offcanvas-body {
+
+        flex-grow: 1;
+        padding: 1rem 1rem;
+        overflow-y: visible;
+        background-color: inherit;
+        min-height: 100vh;
+
+    }
+
+    
+}
+
+@media (min-width: 991px) {
+    .mobile-nav-item {
+     display: none;
+
+    }
+
+    
+}
+
+.mobile-nav-item {
+    padding-left:12px;
+}
+
+#category{
+    position: relative;
+
+    color: white;
+  }
+
+
