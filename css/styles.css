@@ -45,6 +45,8 @@ body {
     font-size: 80px;
     color: rgba(142, 119, 103, 1);
     font-weight: bold;
+    line-height: 1;
+    margin-bottom: 0;
 }
 .text-1000 {
     color: rgba(66, 66, 66, 1);
@@ -175,6 +177,8 @@ body {
    
 }
 
+
+
 .top-wave-3 {
     background: url(../img/laine-1.svg) no-repeat bottom;
     background-size: 100%;
@@ -201,6 +205,19 @@ body {
     position: absolute;
     pointer-events: none;
 }
+
+.top-wave-4 {
+    background: url(../img/laine-1.svg) no-repeat bottom;
+    background-size: 100%;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+
 
 
 .bg-alamlehe-header {
@@ -230,6 +247,7 @@ body {
 
 .navbar-pages {
     backdrop-filter: blur(16px);
+    transition: background-color 1s;
 }
 
 .navbar-nav>li {

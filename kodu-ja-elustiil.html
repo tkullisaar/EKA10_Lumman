@@ -31,39 +31,60 @@
 
 
 
-    <nav class="navbar navbar-pages fixed-top navbar-expand-sm navbar-dark" id="menufix">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"> <img src="img/lumman-logo.svg"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+<!--NAVBAR -->
+<nav class="navbar navbar-pages fixed-top navbar-expand-lg navbar-dark " id="menufix">
+    <div class="container-fluid">
+
+
+        <button class="navbar-toggler menu-icon md" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+            <img style="width: 30px" src="img/mdi-light_menu.svg" alt="menu icon">
+        </button>
+
+        <a class="navbar-brand " href="index.html"> <img src="img/lumman-logo.svg"></a>
+
+        <div class="offcanvas offcanvas-start-lg mobile-nav" tabindex="-1" id="offcanvasWithBackdrop"
+            aria-labelledby="offcanvasWithBackdropLabel">
+            <div class="offcanvas-header d-flex d-lg-none ms-auto">
+                <a href="javascript:void(0) " class="text-reset p-0" data-bs-dismiss="offcanvas" aria-label="close">
+                    <img style="width: 30px ms-auto" src="img/close-icon.svg" alt="menu icon">
+                </a>
+            </div>
+
+
+            <div class="offcanvas-body p-lg-0">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">AVALEHT</a>
+                    <li class="nav-item-navbar">
+                        <a class="nav-link active" aria-current="page" href="index.html">AVALEHT</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="pood.html">POOD</a>
+                    <li class="nav-item-navbar">
+                        <a class="nav-link" href="pood.html">POOD</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item-navbar">
                         <a class="nav-link" href="meist.html">MEIST</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item-navbar">
                         <a class="nav-link" href="blogi.html">BLOGI</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item-navbar">
                         <a class="nav-link" href="kontakt.html">KONTAKT</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"> <img src="img/mdi-light_cart.svg"></a>
-                    </li>
+                    <div class="d-flex ms-3">
+                        <li class="mobile-nav-item">
+                            <a class="social-icon" href="index.html"> <img src="img/instagram.svg"></a>
+                        </li>
+                        <li class="mobile-nav-item">
+                            <a class="social-icon" href="index.html"> <img src="img/facebook.svg"></a>
+                        </li>
+                    </div>
 
                 </ul>
 
             </div>
         </div>
-    </nav>
+        <a class="cart " href="index.html"> <img src="img/mdi-light_cart.svg"></a>
+    </div>
+</nav>
 
     
         </div>
@@ -99,91 +120,71 @@
     
     
     
+<!-- FOOTER -->
+<footer class="bg-footer pt-4">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 mb-4">
+                <p>E-POOD</p>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-white">Müügitingimused</a></li>
+                    <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-white">Privaatsustingimused</a>
+                    </li>
+                    <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-white">Tarneinfo</a></li>
+                    <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-white">Edasimüüjale</a>
+                    </li>
+                    <li class="nav-item mb-1"><a href="kontakt.html" class="nav-link p-0 text-white">Kontakt</a>
+                    </li>
+                    <div class="d-flex mt-4">
+
+                        <a class="social-icon pe-2" href="index.html"> <img src="img/instagram.svg"></a>
 
 
+                        <a class="social-icon" href="index.html"> <img src="img/facebook.svg"></a>
 
-    <div class="bg-footer">
-    <div class="container-fluid">
-        
-            <div class="container text-white">
-                <footer class="py-5">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-12">
-                            <h5>E-POOD</h5>
-                            <ul class="nav flex-column">
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-white">Müügitingimused</a></li>
-                                <li class="nav-item mb-2"><a href="#"
-                                        class="nav-link p-0 text-white">Privaatsustingimused</a></li>
-                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Tarneinfo</a></li>
-                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Makseviisid</a>
-                                </li>
-                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Edasimüüjale</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="col-md-3 col-sm-12">
-                            <h5>KONTAKTID</h5>
-                            <ul class="nav flex-column">
-                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Lumman OÜ</a></li>
-                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Reg nr
-                                        14627582</a></li>
-                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">E-mail
-                                        info@lumman.ee</a></li>
-                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Tel 58043166,
-                                        58530442</a></li>
-                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">IG/FB icons</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="col-md-3 col-sm-12">
-                            <h5>KOOSTÖÖPARTNERID</h5>
-                            <ul class="nav flex-column">
-                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Materjalivoog</a>
-                                </li>
-                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Astangu</a></li>
-                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Perekaart</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="col-md-3 col-sm-12">
-                            <form>
-                                <h5>ESIMESE OSTU SOODUSTUS -5%</h5>
-                                <div class="d-flex w-100 gap-2">
-                                    <label for="newsletter1" class="visually-hidden">Sisesta e-posti aadress</label>
-                                    <input id="newsletter1" type="text" class="form-control"
-                                        placeholder="Sisesta e-posti aadress">
-                                    <button class="btn btn-light" type="button">SOOVIN</button>
-                                </div>
-                                <p>Liitudes meie uudiskirjaga on esimesel ostul Sulle kogu Lummani täishinnaga
-                                    tootevalik 5% soodsam. Uudiskirja tellides oled tutvunud ning nõustud meie
-                                    privaatsuspoliitikaga.</p>
-                            </form>
-                        </div>
                     </div>
+                </ul>
+            </div>
 
-                    <div class="d-flex justify-content-between py-4 my-4 border-top">
-                        <p>&copy; 2021 Lumman OÜ</p>
-                        <ul class="list-unstyled d-flex">
-                            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                                        <use xlink:href="#twitter"></use>
-                                    </svg></a></li>
-                            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                                        <use xlink:href="#instagram"></use>
-                                    </svg></a></li>
-                            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                                        <use xlink:href="#facebook"></use>
-                                    </svg></a></li>
-                        </ul>
+            <div class="col-md-4 col-sm-12 mb-4">
+                <p>KOOSTÖÖPARTNERID</p>
+                <ul class="nav flex-column">
+                    <li class="pb-1 pt-1"><a class="image-button" href="index.html"> <img
+                                src="img/materjalivoog.svg"></a>
+                    </li>
+                    <li class="pb-1 pt-1"><a class="image-button" href="index.html"> <img src="img/astangu.svg"></a>
+                    </li>
+                    <li class="pb-1 pt-1"><a class="image-button" href="index.html"> <img
+                                src="img/perekaart.svg"></a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 col-sm-12 mb-4">
+                <form>
+                    <p>ESIMESE OSTU SOODUSTUS -5%</p>
+                    <div class="d-flex w-100 gap-2 mt-1 mb-1">
+                        <label for="newsletter1" class="visually-hidden">Sisesta e-posti aadress</label>
+                        <input id="newsletter1" type="text" class="form-control"
+                            placeholder="Sisesta e-posti aadress">
                     </div>
-                </footer>
+                    <button class="btn btn-light mt-2 mb-2" type="button">SOOVIN</button>
+                    <p class="body-12">Liitudes meie uudiskirjaga on esimesel ostul Sulle kogu Lummani täishinnaga
+                        tootevalik 5% soodsam. Uudiskirja tellides oled tutvunud ning nõustud meie
+                        privaatsuspoliitikaga.</p>
+                </form>
             </div>
         </div>
     </div>
+</footer>
 
-
+<!-- FOOTER ABSOLUTE -->
+<footer>
+    <div class="bg-footer-absolute pt-2">
+        <div class="container">
+            <p>&copy; 2022 Lumman OÜ</p>
+        </div>
+    </div>
+</footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
