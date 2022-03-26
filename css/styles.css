@@ -21,6 +21,11 @@ h4 {
     size: 20px;
 }
 
+h5 {
+    font-family: 'Quicksand', sans-serif;
+    size: 18px;
+}
+
 body {
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
@@ -29,6 +34,11 @@ body {
 .body-16 {
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
+}
+
+.body-12 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
 }
 
 .facts {
@@ -157,10 +167,22 @@ body {
 
 
 .bg-tekstiilitoostuse-moju {
+   
     background: url(../img/bg-tekstiilitoostuse-moju.png) no-repeat;
     background-size: cover;
-    margin-left: 0%;
-    margin-right: 0%;
+
+    height: 45rem;
+   
+}
+
+.top-wave-3 {
+    background: url(../img/laine-1.svg) no-repeat bottom;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
 }
 
 .wave-3 {
@@ -227,7 +249,7 @@ body {
 
 }
 
-    .nav-item {
+    .nav-item-navbar {
         /* Set up the hover */
 /* If you aren't using autoprefix, remember to prefix the gradient for other browsers */
 background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
@@ -237,7 +259,7 @@ background-position: center bottom;
 transition: all .2s ease-out;
 }
 
-.nav-item:hover {
+.nav-item-navbar:hover {
 /* The following line makes the underline only as wide as the text */
 /* background-size: calc(100% - 2em) 5px, auto; */
 background-size: calc(100% - 4rem) 1px, auto;
@@ -276,6 +298,11 @@ background-color: rgb(208, 201, 191)
 
 .bg-footer {
     background-color: #A49688;
+}
+
+.bg-footer-absolute {
+    background-color: white;
+    color: #795A4A;
 }
 
 .empty-space {
@@ -512,4 +539,7 @@ a:link {
     color: white;
   }
 
-
+.image-button {
+    height: 80px;
+    padding-bottom: 12px;
+}
