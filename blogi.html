@@ -60,15 +60,23 @@
             <div class="offcanvas-body p-lg-0">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item-navbar">
-                        <a class="nav-link active" aria-current="page" href="index.html">AVALEHT</a>
+                        <a class="nav-link" aria-current="page" href="index.html">AVALEHT</a>
                     </li>
-                    <li class="nav-item-navbar">
-                        <a class="nav-link" href="pood.html">POOD</a>
-                    </li>
+                    <div class="dropdown">
+                        <a class="dropdown-toggle text-white nav-item-navbar nav-link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                          POOD
+                        </a>
+                      
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="kodu-ja-elustiil.html">kodu ja elustiil</a></li>
+                          <li><a class="dropdown-item" href="lapsed-ja-mang.html">lapsed ja mäng</a></li>
+                        
+                        </ul>
+                      </div>
                     <li class="nav-item-navbar">
                         <a class="nav-link" href="meist.html">MEIST</a>
                     </li>
-                    <li class="nav-item-navbar">
+                    <li class="nav-item-navbar-active">
                         <a class="nav-link" href="blogi.html">BLOGI</a>
                     </li>
                     <li class="nav-item-navbar">
@@ -102,33 +110,39 @@
         <div class="container px-200">
             <div class="row pt-3 row justify-content-md-center">
                 <div class="col">
-                    <h1 class="mb-4 mt-4">blogi</h1>
+                    <a href="blogi.html"><h1 class="mb-4 mt-4 page-title">blogi</h1></a>
                     <div>
+                    </div>
 
-                        <h2>TITLE HEADING</h2>
-                        <h5>Title description, Dec 7, 2017</h5>
-                        <div class="fakeimg" style="height:200px;">Image</div>
 
-                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco.</p>
-                        <div class="empty-space"></div>
-                        <h2>TITLE HEADING</h2>
-                        <h5>Title description, Sep 2, 2017</h5>
-                        <div class="fakeimg" style="height:200px;">Image</div>
+                    <div class="row pt-3 row justify-content-md-center">
+                        <div class="col-10">
+                            <hr class="blog-divider">
+                        <h2>MIDA SAAB ÜKSIKISIK TEHA?</h2>
+                        <h5>03/04/2021</h5>
+                        <img class="blog-img my-4" src="./img/blogi-1.jpg" alt="">
+                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...  <a href="">loe edasi</a></p>
+                           
+                            <hr class="blog-divider">
 
-                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco.</p>
+                            <h2 class="mt-5">MEIE PUIDUST TASAKAALUKLOTSIDE LUGU</h2>
+                            <h5>03/04/2021</h5>
+                            <img class="blog-img my-4" src="./img/blogi-1.jpg" alt="">
+                            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...  <a href="">loe edasi</a></p>
 
-                        <h2>TITLE HEADING</h2>
-                        <h5>Title description, Sep 2, 2017</h5>
-                        <div class="fakeimg" style="height:200px;">Image</div>
+                                <hr class="blog-divider">
 
-                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco.</p>
-
+                                <h2 class="mt-5">KÕIK, MIDA MEILE PRÜGISORTEERIMISE KOHTA EI RÄÄGITA</h2>
+                        <h5>03/04/2021</h5>
+                        <img class="blog-img my-4" src="./img/blogi-1.jpg" alt="">
+                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...  <a href="">loe edasi</a></p>
+                        <hr class="blog-divider mb-5">
                     </div>
                 </div>
             </div>

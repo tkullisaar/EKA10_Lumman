@@ -54,12 +54,21 @@
             <div class="offcanvas-body p-lg-0">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item-navbar">
-                        <a class="nav-link active" aria-current="page" href="index.html">AVALEHT</a>
+                        <a class="nav-link" aria-current="page" href="index.html">AVALEHT</a>
                     </li>
-                    <li class="nav-item-navbar">
-                        <a class="nav-link" href="pood.html">POOD</a>
-                    </li>
-                    <li class="nav-item-navbar">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle text-white nav-item-navbar nav-link" href="#" role="button"
+                          id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                          POOD
+                        </a>
+          
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="lapsed-ja-mang.html">lapsed ja mäng</a></li>
+                          <li><a class="dropdown-item" href="kodu-ja-elustiil.html">kodu ja elustiil</a></li>
+          
+                        </ul>
+                      </div>
+                    <li class="nav-item-navbar-active">
                         <a class="nav-link" href="meist.html">MEIST</a>
                     </li>
                     <li class="nav-item-navbar">
@@ -96,7 +105,7 @@
         <div class="container px-200">
             <div class="row pt-3 row justify-content-md-center">
                 <div class="col">
-                    <h1 class="mb-4 mt-4">meist</h1>
+                    <a href="meist.html"><h1 class="mb-4 mt-4 page-title">meist</h1></a>
                     <p class="two-columns">Meil on siiras rõõm, et oled meid leidnud!
 
                         Oleme Sandra ja Triin – näod ja nimed Lummani taga. Kaks ema, kelle “assistentideks” kodukontoris on viis armsat väikest põnni. Lapsed on meie vaateid ja arusaamu väga palju muutnud ning võib vist öelda, et just tänu nendele sündis ka Lumman.

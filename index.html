@@ -56,9 +56,17 @@
                         <li class="nav-item-navbar">
                             <a class="nav-link active" aria-current="page" href="index.html">AVALEHT</a>
                         </li>
-                        <li class="nav-item-navbar">
-                            <a class="nav-link" href="pood.html">POOD</a>
-                        </li>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle text-white nav-item-navbar nav-link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                              POOD
+                            </a>
+                          
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <li><a class="dropdown-item" href="kodu-ja-elustiil.html">kodu ja elustiil</a></li>
+                              <li><a class="dropdown-item" href="lapsed-ja-mang.html">lapsed ja mäng</a></li>
+                            
+                            </ul>
+                          </div>
                         <li class="nav-item-navbar">
                             <a class="nav-link" href="meist.html">MEIST</a>
                         </li>
@@ -95,8 +103,8 @@
                 <div class="container">
                     <div class="row vh-100 align-items-center lineUp">
                         <div class="col text-center text-white">
-                            <h1 id="changeText">rohkem kui lihtsalt</h1>
-                            <h1 class="yellow">ajatu disain</h1>
+                            <h1 class="main-title" id="changeText">rohkem kui lihtsalt</h1>
+                            <h1 class="yellow main-title">ajatu disain</h1>
                         </div>
                     </div>
                 </div>
@@ -141,7 +149,7 @@
             <div class="bg-kodu-ja-elustiil col-lg-6 col-sm-12 col-md-6 text-white text-center">
                 <div class="overlay"></div>
                 <h1 class="text-center" id="category">kodu ja elustiil</h1>
-                <a class="btn btn-light" href="pood.html" role="button">VAATA
+                <a class="btn btn-light" href="kodu-ja-elustiil.html" role="button">VAATA
                     TOOTEID</a>
             </div>
 
@@ -150,7 +158,7 @@
                 <div class="overlay"></div>
 
                 <h1 class="text-center" id="category">lapsed ja mäng</h1>
-                <p><a class="btn btn-light" href="pood.html" role="button">VAATA
+                <p><a class="btn btn-light" href="lapsed-ja-mang.html" role="button">VAATA
                         TOOTEID</a></p>
             </div>
             <div class="top-wave-2"></div>
@@ -162,29 +170,29 @@
             <div class="bg-tekstiilitoostuse-moju">
 
                 <div class="container">
-                    <div class="row text-800 text-center justify-content-center mb-5">
-                        <div class="col  ">
-                            <h1 class="mt-5">tekstiilitööstuse mõju</h1>
+                    <div class="row text-800 text-center justify-content-center mb-1">
+                        <div class="col  text-white ">
+                            <h1 class="mt-5 ">tekstiilitööstuse mõju</h1>
                         </div>
                     </div>
                     <div class="row text-800 text-center justify-content-center mb-5">
-                        <div class="col">
+                        <div class="col  text-white">
                             <h4>ehk miks peaksime olemasolevat materjali maksimaalselt kasutama</h4>
                         </div>
                     </div>
                     <div class="row text-800 text-center justify-content-center mb-5">
-                        <div class="col-md-4">
-                            <h4>Hinnanguliselt tekitab tekstiilitööstus</h4>
+                        <div class="col-md-4 text-white">
+                            <h4 class="mb-0 mt-2">Hinnanguliselt tekitab tekstiilitööstus</h4>
                             <p div class="facts"><span class="scroll-counter" data-counter-time="2000">10</span>%</p>
                             <h4 div class="mb-5">ülemaailmsest CO2 heitkogusest</h4>
                         </div>
-                        <div class="col-md-4">
-                            <h4>Aastas kasutab tekstiilitööstus</h4>
+                        <div class="col-md-4 text-white">
+                            <h4 class="mb-0 mt-2">Aastas kasutab tekstiilitööstus</h4>
                             <p div class="facts"><span class="scroll-counter" data-counter-time="2000">79</span></p>
                             <h4 div class="mb-5">miljardit tonni vett</h4>
                         </div>
-                        <div class="col-md-4">
-                            <h4>Ühe t-särgi tootmiseks kulub</h4>
+                        <div class="col-md-4 text-white">
+                            <h4 class="mb-0 mt-2">Ühe t-särgi tootmiseks kulub</h4>
 
                             <p div class="facts"><span class="scroll-counter" data-counter-time="2000">2700</span></p>
 
@@ -192,7 +200,7 @@
                         </div>
 
                         <div class="row text-800 text-center justify-content-center mb-0">
-                            <div class="col">
+                            <div class="col  text-white">
                                 <p>Allikas: European Paliament, “The impact of textile production and waste on the
                                     environment”,
                                     29-12-2020</p>
@@ -210,9 +218,9 @@
 
     <div class="container-fluid">
         <div class="container">
-            <div class="row text-center">
+            <div class="row mt-5 text-center">
                 <div class="col">
-                    <h1>blogi</h1>
+                    <a href="blogi.html"></a><h1 class="page-title">blogi</h1>
                 </div>
             </div>
             <div class="row text-center justify-content-center">
@@ -242,24 +250,22 @@
             <div class="row">
                 <div class="col-md-4 col-sm-12 mb-4">
                     <p>E-POOD</p>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-white">Müügitingimused</a></li>
-                        <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-white">Privaatsustingimused</a>
-                        </li>
-                        <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-white">Tarneinfo</a></li>
-                        <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-white">Edasimüüjale</a>
-                        </li>
-                        <li class="nav-item mb-1"><a href="kontakt.html" class="nav-link p-0 text-white">Kontakt</a>
-                        </li>
-                        <div class="d-flex mt-4">
+                    <div class="nav flex-column">
+                    <a class="nav-item-footer mb-1 p-0" href="">Müügitingimused</a>
+                    <a class="nav-item-footer mb-1 p-0" href="">Privaatsustingimused</a>
+                    <a class="nav-item-footer mb-1 p-0" href="">Tarneinfo</a>
+                    <a class="nav-item-footer mb-1 p-0" href="">Edasimüüjale</a>
+                    <a class="nav-item-footer mb-1 p-0" href="kontakt.html">Kontakt</a>
+                    <div class="d-flex mt-4">
 
-                            <a class="social-icon pe-2" href="index.html"> <img src="img/instagram.svg"></a>
+                        <a class="social-icon pe-2" href="index.html"> <img src="img/instagram.svg"></a>
 
 
-                            <a class="social-icon" href="index.html"> <img src="img/facebook.svg"></a>
+                        <a class="social-icon" href="index.html"> <img src="img/facebook.svg"></a>
 
-                        </div>
-                    </ul>
+                    </div>
+                    </div>
+                    
                 </div>
 
                 <div class="col-md-4 col-sm-12 mb-4">

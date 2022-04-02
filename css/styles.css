@@ -136,8 +136,8 @@ body {
     background: url(../img/bg-kodu-ja-elustiil.png) no-repeat;
     background-size: cover;
 
-    padding-bottom: 8rem;
-    padding-top: 8rem;
+    padding-bottom: 10rem;
+    padding-top: 10rem;
 }
 
 .bg-kodu-ja-elustiil:hover .overlay {
@@ -148,8 +148,8 @@ body {
     background: url(../img/bg-lapsed-ja-mang.png) no-repeat;
     background-size: cover;
 
-    padding-bottom: 8rem;
-    padding-top: 8rem;
+    padding-bottom: 10rem;
+    padding-top: 10rem;
     overflow: hidden;
 
     display: inline-block;
@@ -295,6 +295,22 @@ body {
     background-size: calc(100% - 4rem) 1px, auto;
 }
 
+.nav-item-navbar-active {
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: calc(100% - 4rem) 1px, auto;  
+}
+
+.nav-item-footer {
+    color: white;
+
+}
+
+.nav-item-footer:hover {
+    color:rgb(208, 201, 191);
+
+}
 
 .btn-light {
     justify-content: center;
@@ -371,6 +387,20 @@ ul.no-bullets {
 
 .category-item:hover {
     background-size: 100% 1px, auto;
+
+}
+
+.category-item-active {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: rgb(164, 150, 136);
+    padding-left: 0px;
+    padding-right: 0px;
+    background-image: linear-gradient(rgb(164, 150, 136), rgb(164, 150, 136));
+    background-size: 100% 1px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all .2s ease-out;
 
 }
 
@@ -544,6 +574,9 @@ a:active {
 
 .mobile-nav-item {
     padding-left: 12px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
 }
 
 #category {
@@ -647,12 +680,40 @@ a:active {
     opacity: 1;
 }
 
-.two-columns {
-    column-count: 2;
-    column-rule-style: solid;
-    column-rule: 1px solid rgb(164, 150, 136);
-    column-gap: 40px
+
+.page-title {
+    color: rgba(66, 66, 66, 1);
 }
+
+
+.dropdown-toggle:hover {
+        background-size: 0 1px, auto;
+      
+    }
+    
+
+ .dropdown:hover .dropdown-menu{
+    display: block;
+    background-color: transparent;
+    border:none;
+    border-radius: 0%;
+}
+.dropdown-menu{
+    margin-top: 0;
+    
+}  
+  
+.dropdown {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.blog-divider {
+    color: rgb(164, 150, 136);
+    box-sizing: border-box;
+    
+}
+
 
 /* -- media queries -- */
 
@@ -669,6 +730,28 @@ a:active {
     .mobile-nav-item {
         display: none;
 
+    }
+
+    .two-columns {
+        column-count: 2;
+        column-rule-style: solid;
+        column-rule: 1px solid rgb(164, 150, 136);
+        column-gap: 40px
+    }
+
+    .nav-link {
+        padding-top: 0rem;
+        padding-bottom:0rem;
+    }
+
+    .dropdown:hover .dropdown-menu{
+        display: block;
+        background-color: rgb(164, 150, 136);
+        border:none;
+    }
+    .dropdown-menu{
+        margin-top: 0;
+        
     }
 }
 
@@ -692,6 +775,32 @@ a:active {
         background-color: inherit;
         min-height: 100vh;
     }
-}
 
+    .nav-link {
+        padding-top: 1rem;
+        padding-bottom:1rem;
+    }
+
+    .nav-item-navbar:hover {
+        background-size:0%;
+    }
+
+    .nav-item-navbar-active {
+        background-size:0%;
+    }
+
+    
+    }
+
+
+   
+
+  
+    
+
+ @media (max-width : 767.98px) {
+    .main-title {
+        font-size: 32px;
+    }
+ }
 

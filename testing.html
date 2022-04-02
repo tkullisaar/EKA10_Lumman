@@ -25,6 +25,35 @@
   <script data-require="jquery@3.1.1" data-semver="3.1.1"
     src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
+
+
+  <style>
+    .dropdown:hover .dropdown-menu {
+      display: block;
+      background-color: transparent;
+      border: none;
+      border-radius: 0%;
+    }
+
+    .dropdown-menu {
+      margin-top: 0;
+
+    }
+
+    @media (min-width : 991.98px) {
+      .dropdown:hover .dropdown-menu {
+        display: block;
+        background-color: rgb(164, 150, 136);
+        border: none;
+      }
+
+      .dropdown-menu {
+        margin-top: 0;
+
+      }
+    }
+  </style>
+
   <title>lumman.ee redesign</title>
 </head>
 
@@ -57,9 +86,18 @@
             <li class="nav-item-navbar">
               <a class="nav-link active" aria-current="page" href="index.html">AVALEHT</a>
             </li>
-            <li class="nav-item-navbar">
-              <a class="nav-link" href="pood.html">POOD</a>
-            </li>
+            <div class="dropdown">
+              <a class="dropdown-toggle text-white nav-item-navbar nav-link" href="#" role="button"
+                id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                POOD
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="lapsed-ja-mang.html">lapsed ja mäng</a></li>
+                <li><a class="dropdown-item" href="kodu-ja-elustiil.html">kodu ja elustiil</a></li>
+
+              </ul>
+            </div>
             <li class="nav-item-navbar">
               <a class="nav-link" href="meist.html">MEIST</a>
             </li>
@@ -284,7 +322,7 @@
           </div>
         </div>
 
-        
+
       </div>
     </div>
   </div>
@@ -376,15 +414,8 @@
 
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
   <script src='https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script>
-  <script>
-    $('#lightSlider').lightSlider({
-      gallery: true,
-      item: 1,
-      loop: true,
-      slideMargin: 0,
-      thumbItem: 4
-    });
-  </script>
+
+
 </body>
 
 </html>

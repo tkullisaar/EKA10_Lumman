@@ -50,11 +50,19 @@
             <div class="offcanvas-body p-lg-0">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item-navbar">
-                        <a class="nav-link active" aria-current="page" href="index.html">AVALEHT</a>
+                        <a class="nav-link" aria-current="page" href="index.html">AVALEHT</a>
                     </li>
-                    <li class="nav-item-navbar">
-                        <a class="nav-link" href="pood.html">POOD</a>
-                    </li>
+                    <div class="dropdown">
+                        <a class="dropdown-toggle text-white nav-item-navbar nav-link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                          POOD
+                        </a>
+                      
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="kodu-ja-elustiil.html">kodu ja elustiil</a></li>
+                          <li><a class="dropdown-item" href="lapsed-ja-mang.html">lapsed ja mäng</a></li>
+                        
+                        </ul>
+                      </div>
                     <li class="nav-item-navbar">
                         <a class="nav-link" href="meist.html">MEIST</a>
                     </li>
@@ -93,7 +101,7 @@
         <div class="container">
             <div class="row pt-3 row justify-content-center">
                 <div class="col">
-                    <h1 class="mb-4 mt-4">pood</h1>
+                    <a href="pood.html"><h1 class="mb-4 mt-4 page-title">pood</h1></a>
                     <ul class="list-group no-bullets list-group-horizontal">
                         <li class="category">
                         <a class="category-item selected" href="kodu-ja-elustiil.html">kodu ja elustiil</a>

@@ -26,11 +26,6 @@
 
 <body>
 
-    <div class="bg-alamlehe-header">
-        <div class="laine-header">
-
-
-
 <!--NAVBAR -->
 <nav class="navbar navbar-pages fixed-top navbar-expand-lg navbar-dark " id="menufix">
     <div class="container-fluid">
@@ -55,11 +50,19 @@
             <div class="offcanvas-body p-lg-0">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item-navbar">
-                        <a class="nav-link active" aria-current="page" href="index.html">AVALEHT</a>
+                        <a class="nav-link" aria-current="page" href="index.html">AVALEHT</a>
                     </li>
-                    <li class="nav-item-navbar">
-                        <a class="nav-link" href="pood.html">POOD</a>
-                    </li>
+                    <div class="dropdown">
+                        <a class="dropdown-toggle text-white nav-item-navbar nav-link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                          POOD
+                        </a>
+                      
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="kodu-ja-elustiil.html">kodu ja elustiil</a></li>
+                          <li><a class="dropdown-item" href="lapsed-ja-mang.html">lapsed ja mäng</a></li>
+                        
+                        </ul>
+                      </div>
                     <li class="nav-item-navbar">
                         <a class="nav-link" href="meist.html">MEIST</a>
                     </li>
@@ -86,18 +89,22 @@
     </div>
 </nav>
 
-    
+ 
+
+    <div class="bg-alamlehe-header">
+        <div class="laine-header hero-bg-lumman-wave">
+            
         </div>
     </div>
 
     <div class="container-fluid">
-        <div class="container px-200">
-            <div class="row pt-3 row justify-content-md-center">
+        <div class="container">
+            <div class="row pt-3 row justify-content-center">
                 <div class="col">
-                    <h1 class="mb-4 mt-4">pood</h1>
-                    <ul class="list-group no-bullets list-group-horizontal justify-content-center">
+                    <a href="pood.html"><h1 class="mb-4 mt-4 page-title">pood</h1></a>
+                    <ul class="list-group no-bullets list-group-horizontal">
                         <li class="category">
-                        <a class="category-item category-item-selected" href="kodu-ja-elustiil.html">kodu ja elustiil</a>
+                        <p class="category-item-active selected">kodu ja elustiil</p>
                         
                     </li>
                     <li>
@@ -116,7 +123,191 @@
         </div>
     </div>
  
-    
+   
+    <!-- Section-->
+    <section class="py-5">
+        <div class="container">
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
+                <div class="col mb-5">
+                    <div class="card">
+                        <a href="toode.html">
+                            
+                        <!-- Product image-->
+                        <div class="shop-img">
+                            <img class="img-fluid" src="img/toode-1.jpg" alt="toote pilt" />
+                        </div>
+            
+                        <!-- Product details-->
+                        <div class="card-body p-3">
+                            
+                                <div class="text-center">
+                                <!-- Product name-->
+                                <p class="card-title">Tekstiilist kotid</p>
+                                <!-- Product price-->
+                                <p class="card-title">€ 59.00</p>
+                                
+                            </div>
+                        
+                        </div>
+                    
+                    </a>
+
+                        <!-- Product actions-->
+                        <div class="card-footer p-0 border-top-0 bg-transparent d-flex justify-content-center">
+                            <button class="btn-dark"><img class="pe-1 pb-1" src="img/mdi-light_cart.svg"></img>lisa ostukorvi</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-5">
+                    <div class="card">
+                        <a href="toode.html">
+                            
+                        <!-- Product image-->
+                        <div class="shop-img">
+                            <img class="img-fluid" src="img/toode-1.jpg" alt="toote pilt" />
+                        </div>
+            
+                        <!-- Product details-->
+                        <div class="card-body p-3">
+                            
+                                <div class="text-center">
+                                <!-- Product name-->
+                                <p class="card-title">Tekstiilist kotid</p>
+                                <!-- Product price-->
+                                <p class="card-title">€ 59.00</p>
+                                
+                            </div>
+                        
+                        </div>
+                    
+                    </a>
+
+                        <!-- Product actions-->
+                        <div class="card-footer p-0 border-top-0 bg-transparent d-flex justify-content-center">
+                            <button class="btn-dark"><img class="pe-1 pb-1" src="img/mdi-light_cart.svg"></img>lisa ostukorvi</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-5">
+                    <div class="card">
+                        <a href="toode.html">
+                            
+                        <!-- Product image-->
+                        <div class="shop-img">
+                            <img class="img-fluid" src="img/toode-1.jpg" alt="toote pilt" />
+                        </div>
+            
+                        <!-- Product details-->
+                        <div class="card-body p-3">
+                            
+                                <div class="text-center">
+                                <!-- Product name-->
+                                <p class="card-title">Tekstiilist kotid</p>
+                                <!-- Product price-->
+                                <p class="card-title">€ 59.00</p>
+                                
+                            </div>
+                        
+                        </div>
+                    
+                    </a>
+
+                        <!-- Product actions-->
+                        <div class="card-footer p-0 border-top-0 bg-transparent d-flex justify-content-center">
+                            <button class="btn-dark"><img class="pe-1 pb-1" src="img/mdi-light_cart.svg"></img>lisa ostukorvi</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-5">
+                    <div class="card">
+                        <a href="toode.html">
+                            
+                        <!-- Product image-->
+                        <div class="shop-img">
+                            <img class="img-fluid" src="img/toode-1.jpg" alt="toote pilt" />
+                        </div>
+            
+                        <!-- Product details-->
+                        <div class="card-body p-3">
+                            
+                                <div class="text-center">
+                                <!-- Product name-->
+                                <p class="card-title">Tekstiilist kotid</p>
+                                <!-- Product price-->
+                                <p class="card-title">€ 59.00</p>
+                                
+                            </div>
+                        
+                        </div>
+                    
+                    </a>
+
+                        <!-- Product actions-->
+                        <div class="card-footer p-0 border-top-0 bg-transparent d-flex justify-content-center">
+                            <button class="btn-dark"><img class="pe-1 pb-1" src="img/mdi-light_cart.svg"></img>lisa ostukorvi</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-5">
+                    <div class="card">
+                        <a href="toode.html">
+                            
+                        <!-- Product image-->
+                        <div class="shop-img">
+                            <img class="img-fluid" src="img/toode-1.jpg" alt="toote pilt" />
+                        </div>
+            
+                        <!-- Product details-->
+                        <div class="card-body p-3">
+                            
+                                <div class="text-center">
+                                <!-- Product name-->
+                                <p class="card-title">Tekstiilist kotid</p>
+                                <!-- Product price-->
+                                <p class="card-title">€ 59.00</p>
+                                
+                            </div>
+                        
+                        </div>
+                    
+                    </a>
+
+                        <!-- Product actions-->
+                        <div class="card-footer p-0 border-top-0 bg-transparent d-flex justify-content-center">
+                            <button class="btn-dark"><img class="pe-1 pb-1" src="img/mdi-light_cart.svg"></img>lisa ostukorvi</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-5">
+                    <div class="card">
+                        <a href="toode.html">
+                        <div class="shop-img">
+                            <img class="img-fluid" src="img/toode-1.jpg" alt="toote pilt" />
+                        </div>
+                        <div class="card-body p-3">
+                                <div class="text-center">
+                                <p class="card-title">Tekstiilist kotid</p>
+                                <p class="card-title">€ 59.00</p>
+                            </div>
+                        </div>
+                    </a>
+
+                        <!-- Product actions-->
+                        <div class="card-footer p-0 border-top-0 bg-transparent d-flex justify-content-center">
+                            <button class="btn-dark"><img class="pe-1 pb-1" src="img/mdi-light_cart.svg"></img>lisa ostukorvi</button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+</section>
     
     
     
@@ -185,6 +376,7 @@
         </div>
     </div>
 </footer>
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
