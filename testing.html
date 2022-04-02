@@ -1,144 +1,390 @@
-
-
-
-
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="/path/to/cdn/bootstrap.min.css" />
-
-    
-
-    <style>
-
-@media (min-width : 992px) {
-  .offcanvas {
-    visibility      : visible;
-    position        : relative;
-    background      : none;
-    border          : none;
-    justify-content : end;
-    color           : red;
-  }
-}
-@media (max-width : 992px) {
-  .offcanvas {
-    width : 250px !important;
-  }
-  .offcanvas-start-lg {
-    top          : 0;
-    left         : 0;
-    border-right : 1px solid rgba(0, 0, 0, .2);
-    transform    : translateX(-100%);
-  }
-}
-.navbar-nav li a {
-  color: white !important;
-}
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel='stylesheet' href='https://sachinchoolur.github.io/lightslider/dist/css/lightslider.css'>
 
 
 
+  <!-- Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 
-.article-container {
-    width: 300px;
-    height: 200px;
-    border: 1px solid #000000;
-    overflow: hidden;
-    position: relative;
-}
+  <script data-require="jquery@3.1.1" data-semver="3.1.1"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-    .article-img-holder {
-    width: 100%;
-    height: 100%;
-    background: url(https://awik.io/demo/background-image-zoom/traffic2.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: all 1s;
-}
+  <title>lumman.ee redesign</title>
+</head>
 
-.article-img-holder:hover {
-    transform: scale(1.1);
-}
+<body>
 
 
+  <!--NAVBAR -->
+  <nav class="navbar navbar-pages fixed-top navbar-expand-lg navbar-dark " id="menufix">
+    <div class="container-fluid">
 
-    </style>
-    <title>Hello, world!</title>
-  </head>
-  <body>
 
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
-      <div class="container">
-        <a class="navbar-brand text-white" href="#">Navbar</a>
-        <button class="btn btn-danger navbar-toggler border-3 px-2" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
-          >
-        <img style="width: 30px" src="image/text-center.svg" alt="menu icon">
-        </button>
+      <button class="navbar-toggler menu-icon md" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+        <img style="width: 30px" src="img/mdi-light_menu.svg" alt="menu icon">
+      </button>
 
-        <div class="offcanvas offcanvas-start-lg bg-danger" tabindex="-1" id="offcanvasExample"
-          aria-labelledby="offcanvasExampleLabel"
-          >
-          <div class="offcanvas-header d-flex d-lg-none">
-            <a href="javascript:void(0) "
-              class="text-reset p-0"
-              data-bs-dismiss="offcanvas"
-              aria-label="close"
-              >
-              <img style="width: 30px" src="img/icon-heart.svg" alt="menu icon">
-            </a>
-          </div>
-          <div class="offcanvas-body p-lg-0">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+      <a class="navbar-brand " href="index.html"> <img src="img/lumman-logo.svg"></a>
+
+      <div class="offcanvas offcanvas-start-lg mobile-nav" tabindex="-1" id="offcanvasWithBackdrop"
+        aria-labelledby="offcanvasWithBackdropLabel">
+        <div class="offcanvas-header d-flex d-lg-none ms-auto">
+          <a href="javascript:void(0) " class="text-reset p-0" data-bs-dismiss="offcanvas" aria-label="close">
+            <img style="width: 30px ms-auto" src="img/close-icon.svg" alt="menu icon">
+          </a>
+        </div>
+
+
+        <div class="offcanvas-body p-lg-0">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item-navbar">
+              <a class="nav-link active" aria-current="page" href="index.html">AVALEHT</a>
+            </li>
+            <li class="nav-item-navbar">
+              <a class="nav-link" href="pood.html">POOD</a>
+            </li>
+            <li class="nav-item-navbar">
+              <a class="nav-link" href="meist.html">MEIST</a>
+            </li>
+            <li class="nav-item-navbar">
+              <a class="nav-link" href="blogi.html">BLOGI</a>
+            </li>
+            <li class="nav-item-navbar">
+              <a class="nav-link" href="kontakt.html">KONTAKT</a>
+            </li>
+            <div class="d-flex ms-3">
+              <li class="mobile-nav-item">
+                <a class="social-icon" href="index.html"> <img src="img/instagram.svg"></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About</a>
+              <li class="mobile-nav-item">
+                <a class="social-icon" href="index.html"> <img src="img/facebook.svg"></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
+            </div>
+
+          </ul>
+
         </div>
       </div>
-    </nav>
+      <a class="cart " href="index.html"> <img src="img/mdi-light_cart.svg"></a>
+    </div>
+  </nav>
 
-    <div class="article-container">
-      <div class="article-img-holder"></div>
+
+  <div class="bg-alamlehe-header">
+    <div class="laine-header hero-bg-lumman-wave">
+
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row pt-3 row justify-content-center">
+        <div class="col">
+          <ul class="list-group no-bullets list-group-horizontal">
+            <li class="category">
+              <a class="category-item selected" href="kodu-ja-elustiil.html">kodu ja elustiil</a>
+
+            </li>
+            <li>
+              <span class="category-divider">|</span>
+            </li>
+            <li class="category">
+              <a class="category-item" href="lapsed-ja-mang.html">lapsed ja mäng</a>
+
+            </li>
+          </ul>
+
+
+
+        </div>
+      </div>
+    </div>
   </div>
 
 
-    <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <div class="container-fluid mt-2 mb-3">
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-lg-6 col-md-12">
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+          <ul id="lightSlider" style="width:100%">
+            <li data-thumb="img/toode-1.jpg" class="pb-4" style="width: 140px;"> <img src="img/toode-main.jpg" /> </li>
+            <li data-thumb="img/toode-1.jpg" class="pb-4" style="width:140px"> <img src="img/toode-1.jpg" />
+            </li>
+            <li data-thumb="img/toode-1.jpg" class="pb-4" style="width:140px"> <img src="img/toode-1.jpg" />
+            </li>
+          </ul>
+
+
+
+        </div>
+        <div class="col-lg-6 col-md-12 mt-4">
+          <h1>Tekstiilist kotid </h1>
+          <h2 class="mt-4">€ 59.00</h2>
+          <p class="mt-4 mb-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam... Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam...
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+
+
+
+          <div class="d-flex pt-4">
+            <div class="quantity buttons_added d-flex align-items-center">
+              <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity"
+                value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button"
+                value="+" class="plus">
+
+
+            </div>
+            <div class="ms-4"> <button class="btn-dark"><img class="pe-1 pb-1" src="img/mdi-light_cart.svg"></img>lisa
+                ostukorvi</button></div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="row">
+        <div class="col-12 mt-4 pt-4">
+          <h4>Kirjeldus</h4>
+          <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam... Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam...
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 mt-4 pt-4">
+          <h4 class="mb-4">Seotud tooted</h4>
+        </div>
+      </div>
+
+
+      <div class="row row-cols-3 row-cols-md-4 row-cols-lg-6">
+
+        <div class="col mb-5">
+          <div class="card">
+            <a href="toode.html">
+              <div class="shop-img">
+                <img class="img-fluid" src="img/toode-1.jpg" alt="toote pilt" />
+              </div>
+              <div class="card-body p-3">
+                <div class="text-center">
+                  <p class="card-title">Tekstiilist kotid</p>
+                  <p class="card-title">€ 59.00</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col mb-5">
+          <div class="card">
+            <a href="toode.html">
+              <div class="shop-img">
+                <img class="img-fluid" src="img/toode-1.jpg" alt="toote pilt" />
+              </div>
+              <div class="card-body p-3">
+                <div class="text-center">
+                  <p class="card-title">Tekstiilist kotid</p>
+                  <p class="card-title">€ 59.00</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col mb-5">
+          <div class="card">
+            <a href="toode.html">
+              <div class="shop-img">
+                <img class="img-fluid" src="img/toode-1.jpg" alt="toote pilt" />
+              </div>
+              <div class="card-body p-3">
+                <div class="text-center">
+                  <p class="card-title">Tekstiilist kotid</p>
+                  <p class="card-title">€ 59.00</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col mb-5">
+          <div class="card">
+            <a href="toode.html">
+              <div class="shop-img">
+                <img class="img-fluid" src="img/toode-1.jpg" alt="toote pilt" />
+              </div>
+              <div class="card-body p-3">
+                <div class="text-center">
+                  <p class="card-title">Tekstiilist kotid</p>
+                  <p class="card-title">€ 59.00</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col mb-5">
+          <div class="card">
+            <a href="toode.html">
+              <div class="shop-img">
+                <img class="img-fluid" src="img/toode-1.jpg" alt="toote pilt" />
+              </div>
+              <div class="card-body p-3">
+                <div class="text-center">
+                  <p class="card-title">Tekstiilist kotid</p>
+                  <p class="card-title">€ 59.00</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col mb-5">
+          <div class="card">
+            <a href="toode.html">
+              <div class="shop-img">
+                <img class="img-fluid" src="img/toode-1.jpg" alt="toote pilt" />
+              </div>
+              <div class="card-body p-3">
+                <div class="text-center">
+                  <p class="card-title">Tekstiilist kotid</p>
+                  <p class="card-title">€ 59.00</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- FOOTER -->
+  <footer class="bg-footer pt-4">
+    <div class="container text-white">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 mb-4">
+          <p>E-POOD</p>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-white">Müügitingimused</a></li>
+            <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-white">Privaatsustingimused</a>
+            </li>
+            <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-white">Tarneinfo</a></li>
+            <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-white">Edasimüüjale</a>
+            </li>
+            <li class="nav-item mb-1"><a href="kontakt.html" class="nav-link p-0 text-white">Kontakt</a>
+            </li>
+            <div class="d-flex mt-4">
+
+              <a class="social-icon pe-2" href="index.html"> <img src="img/instagram.svg"></a>
+
+
+              <a class="social-icon" href="index.html"> <img src="img/facebook.svg"></a>
+
+            </div>
+          </ul>
+        </div>
+
+        <div class="col-md-4 col-sm-12 mb-4">
+          <p>KOOSTÖÖPARTNERID</p>
+          <ul class="nav flex-column">
+            <li class="pb-1 pt-1"><a class="image-button" href="index.html"> <img src="img/materjalivoog.svg"></a>
+            </li>
+            <li class="pb-1 pt-1"><a class="image-button" href="index.html"> <img src="img/astangu.svg"></a>
+            </li>
+            <li class="pb-1 pt-1"><a class="image-button" href="index.html"> <img src="img/perekaart.svg"></a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 col-sm-12 mb-4">
+          <form>
+            <p>ESIMESE OSTU SOODUSTUS -5%</p>
+            <div class="d-flex w-100 gap-2 mt-1 mb-1">
+              <label for="newsletter1" class="visually-hidden">Sisesta e-posti aadress</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Sisesta e-posti aadress">
+            </div>
+            <button class="btn btn-light mt-2 mb-2" type="button">SOOVIN</button>
+            <p class="body-12">Liitudes meie uudiskirjaga on esimesel ostul Sulle kogu Lummani täishinnaga
+              tootevalik 5% soodsam. Uudiskirja tellides oled tutvunud ning nõustud meie
+              privaatsuspoliitikaga.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FOOTER ABSOLUTE -->
+  <footer>
+    <div class="bg-footer-absolute pt-2">
+      <div class="container">
+        <p>&copy; 2022 Lumman OÜ</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
 
-    <script src="/path/to/cdn/bootstrap.bundle.min.js"></script>
-    
- 
-  </body>
+  <!-- NAVBAR -->
+  <script src="JS/navbar.js"></script>
+  <script src="JS/quantity.js"></script>
+
+
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+  <script src='https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script>
+  <script>
+    $('#lightSlider').lightSlider({
+      gallery: true,
+      item: 1,
+      loop: true,
+      slideMargin: 0,
+      thumbItem: 4
+    });
+  </script>
+</body>
+
 </html>
-
-
-
