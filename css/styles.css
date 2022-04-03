@@ -324,7 +324,7 @@ body {
 
 .btn-dark {
     justify-content: center;
-    padding: 12px 24px;
+    padding: 8px 16px;
     background-color: #C4BBAF;
     backdrop-filter: blur(40px);
     border-radius: 60px;
@@ -467,8 +467,7 @@ a:active {
     min-width: 0;
     word-wrap: break-word;
     border: none;
-    width: 9.2rem;
-    padding-right: 1rem;
+    margin: 0;
 
 }
 
@@ -489,11 +488,12 @@ a:active {
 }
 
 .shop-img {
-    border-radius: 0;
-    width: 100%;
-    height: auto;
+    border-radius: 2px;
+    width: auto;
+    height: 100%;
     overflow: hidden;
     margin: 0;
+    object-fit: cover;
 }
 
 
@@ -507,11 +507,22 @@ a:active {
 }
 
 .shop-img-similar {
-    border-radius: 0;
+    border-radius: 2px;
     width: 100%;
     height: auto;
     overflow: hidden;
     margin: 0 auto;
+    object-fit: cover;
+}
+
+.blog-img {
+        border-radius: 2px;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        margin: 0 auto;
+        object-fit: cover;
+    
 }
 
 
@@ -524,6 +535,26 @@ a:active {
     transform: scale(1.1);
 }
 
+.ig-img {
+    width: 182px;
+    height: 182px;
+    border-radius: 2px;
+    overflow: hidden;
+    margin: 0;
+    object-fit: cover;
+    
+}
+
+
+
+.ig-img img {
+    width: 100%;
+    transition: 0.4s all ease-in-out;
+}
+
+.ig-img:hover img {
+    transform: scale(1.1);
+}
 .badge {
     display: inline-block;
     padding: 0.35em 0.65em;
@@ -589,6 +620,12 @@ a:active {
     height: 80px;
     padding-bottom: 12px;
 }
+
+.lightSlider {
+height: 508px;
+}
+
+
 
 /* -- quantity box -- */
 
@@ -715,6 +752,10 @@ a:active {
 }
 
 
+  
+  
+  
+
 /* -- media queries -- */
 
 @media (min-width : 991.98px) {
@@ -804,3 +845,78 @@ a:active {
     }
  }
 
+
+
+
+
+ .carousel-inner {
+    padding: 1em;
+  }
+  .card {
+    margin: 1rem;
+    
+    border: none;
+  }
+
+  .card-text {
+      font-size: 16px;
+      padding-bottom: 0.5rem;
+      margin-top: 1rem;
+      color: rgba(100, 100, 100, 1);
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #C4BBAF;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .carousel-control-next-icon {
+      background-image: url(../img/mdi-light_chevron-right.svg);
+      margin-left: 3px;
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url(../img/mdi-light_chevron-left.svg);
+    margin-right: 3px;
+}
+  @media (min-width: 768px) {
+    .carousel-item {
+      margin-right: 0;
+      flex: 0 0 33.333333%;
+      display: block;
+    }
+    .carousel-inner {
+      display: flex;
+    }
+  }
+  .card .img-wrapper {
+      max-width: 100%;
+      height: 13rem;
+      border-radius: 2px;
+      overflow: hidden;
+  }
+
+  .card .img-wrapper img {
+    width: 100%;
+    transition: 0.4s all ease-in-out;
+}
+
+.card .img-wrapper:hover img {
+    transform: scale(1.1);
+}
+
+  
+  .card img {
+      max-height: 100%;
+      border-radius: 2px;
+      object-fit: cover;
+  }
+  @media (max-width: 767px) {
+    .card .img-wrapper {
+      height: 17em;
+    }
+  }

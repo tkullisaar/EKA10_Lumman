@@ -1,7 +1,7 @@
 var text = ["jääkmaterjale väärindav", "rohkem kui lihtsalt"];
 var counter = 0;
 var elem = document.getElementById("changeText");
-setInterval(change, 5000);
+setInterval(change, 4500);
 
 function change() {
     elem.classList.add('hide');

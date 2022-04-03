@@ -20,6 +20,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 
     <style>
 
@@ -30,7 +33,7 @@
 
 <body>
 
-<!--NAVBAR -->
+    <!--NAVBAR -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark " id="menufix">
         <div class="container-fluid">
 
@@ -57,16 +60,17 @@
                             <a class="nav-link active" aria-current="page" href="index.html">AVALEHT</a>
                         </li>
                         <div class="dropdown">
-                            <a class="dropdown-toggle text-white nav-item-navbar nav-link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                              POOD
+                            <a class="dropdown-toggle text-white nav-item-navbar nav-link" href="pood.html"
+                                role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                POOD
                             </a>
-                          
+
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                              <li><a class="dropdown-item" href="kodu-ja-elustiil.html">kodu ja elustiil</a></li>
-                              <li><a class="dropdown-item" href="lapsed-ja-mang.html">lapsed ja mäng</a></li>
-                            
+                                <li><a class="dropdown-item" href="kodu-ja-elustiil.html">kodu ja elustiil</a></li>
+                                <li><a class="dropdown-item" href="lapsed-ja-mang.html">lapsed ja mäng</a></li>
+
                             </ul>
-                          </div>
+                        </div>
                         <li class="nav-item-navbar">
                             <a class="nav-link" href="meist.html">MEIST</a>
                         </li>
@@ -112,11 +116,14 @@
         </div>
     </div>
 
+    <!--Intro -->
+
     <div class="container-fluid">
         <div class="container">
-            <div class="reveal row text-center pt-3 justify-content-center">
+            <div class="row text-center pt-3 justify-content-center">
                 <div class="col-lg-8 col-sm-10 mt-4 mb-5">
-                    <p class="lineUp">Lumman on bränd, mida inspireerib idee väärtustavast taaskasutusest ja ringmajandusest -
+                    <p>Lumman on bränd, mida inspireerib idee väärtustavast taaskasutusest ja
+                        ringmajandusest -
                         loome vanast uut ning anname uue elu puhastele ning kvaliteetsetele jääkmaterjalidele.
                         Sealjuures on olulisteks märksõnadeks ka ajatu ja skandinaavialikult minimalistlik disain.
                         Kõik Lummani omatooted on valminud väärtustava taaskasutuse põhimõttel, peites endas palju
@@ -142,6 +149,7 @@
         </div>
     </div>
 
+    <!--Kategooriad -->
 
     <div class="container-fluid ">
         <div class="row position-relative">
@@ -165,6 +173,8 @@
         </div>
     </div>
 
+    <!--Faktid -->
+
     <div class="container-fluid ">
         <div class="row position-relative">
             <div class="bg-tekstiilitoostuse-moju">
@@ -181,17 +191,17 @@
                         </div>
                     </div>
                     <div class="row text-800 text-center justify-content-center mb-5">
-                        <div class="col-md-4 text-white">
+                        <div class="col-md-4 text-white px-5">
                             <h4 class="mb-0 mt-2">Hinnanguliselt tekitab tekstiilitööstus</h4>
                             <p div class="facts"><span class="scroll-counter" data-counter-time="2000">10</span>%</p>
                             <h4 div class="mb-5">ülemaailmsest CO2 heitkogusest</h4>
                         </div>
-                        <div class="col-md-4 text-white">
+                        <div class="col-md-4 text-white px-5">
                             <h4 class="mb-0 mt-2">Aastas kasutab tekstiilitööstus</h4>
                             <p div class="facts"><span class="scroll-counter" data-counter-time="2000">79</span></p>
                             <h4 div class="mb-5">miljardit tonni vett</h4>
                         </div>
-                        <div class="col-md-4 text-white">
+                        <div class="col-md-4 text-white px-5">
                             <h4 class="mb-0 mt-2">Ühe t-särgi tootmiseks kulub</h4>
 
                             <p div class="facts"><span class="scroll-counter" data-counter-time="2000">2700</span></p>
@@ -212,60 +222,205 @@
             </div>
         </div>
     </div>
-    </div>
 
-
+    <!--Blogi -->
 
     <div class="container-fluid">
         <div class="container">
             <div class="row mt-5 text-center">
                 <div class="col">
-                    <a href="blogi.html"></a><h1 class="page-title">blogi</h1>
+                    <a href="blogi.html">
+                        <h1 class="page-title">blogi</h1>
+                    </a>
                 </div>
             </div>
-            <div class="row text-center justify-content-center">
-                <div class="col-md-4 col-sm-12">
-                    <img src="img/blogi-1.jpg" class="img-fluid mb-3" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <img src="img/blogi-2.jpg" class="img-fluid mb-3" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <img src="img/blogi-3.jpg" class="img-fluid mb-3" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+
+            <div class="row">
+                <div class="col">
+
+                    <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="blogi.html">
+                                    <div class="card">
+                                        <div class="img-wrapper"><img
+                                                src="img/BLOGI-jess-harper-sunday-aA6z6hn-yro-unsplash.jpg"
+                                                class="d-block w-100" alt="..."> </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title mb-1">MIDA SAAB ÜKSIKISIK TEHA?</h5>
+                                            <p class="card-title">03/04/2022</p>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam...</p>
+                                            <a href="blogi.html">loe edasi</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="blogi.html">
+                                    <div class="card">
+                                        <div class="img-wrapper"><img src="img/Lumman_tasakaaluklotsid_10-1536x1536.jpg"
+                                                class="d-block w-100" alt="..."> </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title mb-1">MEIE PUIDUST TASAKAALUKLOTSIDE LUGU</h5>
+                                            <p class="card-title">10/02/2022</p>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam...</p>
+                                            <a href="blogi.html">loe edasi</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="blogi.html">
+                                    <div class="card">
+                                        <div class="img-wrapper"><img src="img/longast-tahekesed-2048x1365.jpg"
+                                                class="d-block w-100" alt="..."> </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title mb-1">VALMISTA ISE JÕULUEHTED! 5 LIHTSAT, SOODSAT JA
+                                                ÖKOT IDEED!</h5>
+                                            <p class="card-title">06/12/2021</p>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam...</p>
+                                            <a href="blogi.html">loe edasi</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="blogi.html">
+                                    <div class="card">
+                                        <div class="img-wrapper img-fluid"><img
+                                                src="img/BLOG-pexels-stijn-dijkstra-2583835.jpg" class="d-block w-100"
+                                                alt="..."> </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title mb-1">KÕIK, MIDA MEILE PRÜGISORTEERIMISE KOHTA EI
+                                                RÄÄGITA</h5>
+                                            <p class="card-title">01/10/2021</p>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam...</p>
+                                            <a href="blogi.html">loe edasi</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
             </div>
 
         </div>
     </div>
 
-<!-- FOOTER -->
+    <!--IG feed -->
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6">
+
+                <div class="col mb-2 px-1">
+                    <a href="">
+                        <div class=" ig-img">
+                            <img class="img-fluid" src="img/IG-designecologist-sYI_WSHEsXU-unsplash.jpg"
+                                alt="instagram" />
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col mb-2 px-1">
+                    <a href="">
+                        <div class=" ig-img">
+                            <img class="img-fluid" src="img/IG-ethan-bodnar-kgC99X3WH1w-unsplash - Copy.jpg"
+                                alt="instagram" />
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col mb-2 px-1">
+                    <a href="">
+                        <div class=" ig-img">
+                            <img class="img-fluid" src="img/IG-joshua-lawrence-E_ZJ6moimKE-unsplash.jpg"
+                                alt="instagram" />
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col mb-2 px-1">
+                    <a href="">
+                        <div class=" ig-img">
+                            <img class="img-fluid" src="img/IG-kuivatatud-apelsinid-2048x1365.jpg" alt="instagram" />
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col mb-2 px-1">
+                    <a href="">
+                        <div class=" ig-img">
+                            <img class="img-fluid" src="img/IG-luca-laurence-FseXc3OsIic-unsplash - Copy.jpg"
+                                alt="instagram" />
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col mb-2 px-1">
+                    <a href="">
+                        <div class=" ig-img">
+                            <img class="img-fluid" src="img/IG-thanos-pal-lPZZXH9sjZU-unsplash.jpg" alt="instagram" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mb-5 text-center">
+            <div> <button class="btn-dark"><img class="pe-1 pb-1"
+                        src="img/ant-design_instagram-outlined.svg"></img>jälgi meid instagramis</button></div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- FOOTER -->
     <footer class="bg-footer pt-4">
         <div class="container text-white">
             <div class="row">
                 <div class="col-md-4 col-sm-12 mb-4">
                     <p>E-POOD</p>
                     <div class="nav flex-column">
-                    <a class="nav-item-footer mb-1 p-0" href="">Müügitingimused</a>
-                    <a class="nav-item-footer mb-1 p-0" href="">Privaatsustingimused</a>
-                    <a class="nav-item-footer mb-1 p-0" href="">Tarneinfo</a>
-                    <a class="nav-item-footer mb-1 p-0" href="">Edasimüüjale</a>
-                    <a class="nav-item-footer mb-1 p-0" href="kontakt.html">Kontakt</a>
-                    <div class="d-flex mt-4">
-
-                        <a class="social-icon pe-2" href="index.html"> <img src="img/instagram.svg"></a>
-
-
-                        <a class="social-icon" href="index.html"> <img src="img/facebook.svg"></a>
-
+                        <a class="nav-item-footer mb-1 p-0" href="">Müügitingimused</a>
+                        <a class="nav-item-footer mb-1 p-0" href="">Privaatsustingimused</a>
+                        <a class="nav-item-footer mb-1 p-0" href="">Tarneinfo</a>
+                        <a class="nav-item-footer mb-1 p-0" href="">Edasimüüjale</a>
+                        <a class="nav-item-footer mb-1 p-0" href="kontakt.html">Kontakt</a>
+                        <div class="d-flex mt-4">
+                            <a class="social-icon pe-2" href="index.html"> <img src="img/instagram.svg"></a>
+                            <a class="social-icon" href="index.html"> <img src="img/facebook.svg"></a>
+                        </div>
                     </div>
-                    </div>
-                    
                 </div>
 
                 <div class="col-md-4 col-sm-12 mb-4">
@@ -299,7 +454,7 @@
         </div>
     </footer>
 
-<!-- FOOTER ABSOLUTE -->
+    <!-- FOOTER ABSOLUTE -->
     <footer>
         <div class="bg-footer-absolute pt-2">
             <div class="container">
@@ -307,7 +462,7 @@
             </div>
         </div>
     </footer>
- 
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -331,12 +486,15 @@
     <!-- OFF CANVAS NAVBAR -->
     <script src="/path/to/cdn/bootstrap.bundle.min.js"></script>
 
-     <!-- CHANGE TEXT -->
-     <script src="JS/changeText.js"></script>
+    <!-- CHANGE TEXT -->
+    <script src="JS/changeText.js"></script>
 
-      <!-- REVEAL -->
-      <script src="JS/reveal.js"></script>
+    <!-- REVEAL -->
+    <script src="JS/reveal.js"></script>
 
+
+    <!-- BLOG CAROUSEL-->
+    <script src="js/blog-carousel.js"></script>
 
 </body>
 
