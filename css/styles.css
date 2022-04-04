@@ -536,12 +536,16 @@ a:active {
 }
 
 .ig-img {
-    width: 182px;
-    height: 182px;
+    width: 100%;
+    height: auto;
     border-radius: 2px;
     overflow: hidden;
     margin: 0;
     object-fit: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+   
     
 }
 
